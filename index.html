@@ -1,116 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Demo Project</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Demo Project</title>
+    </head>
 
-<body>
-    <header>
-        <h1>Demo Project</h1>
-    </header>
-    <section id="tables-section">
-        <h2>DATA:</h2>
-        <table border="1">
-            <tr>
-                <th>S.NO</th>
-                <th>NAME</th>
-                <th>ROLL NO</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>V.KUNDANA</td>
-                <td>48</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>P.PALLAVI</td>
-                <td>36</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>K.SARASWATHI</td>
-                <td>58</td>
-            </tr>
-        </table>
-    </section>
+    <body>
+        <header>
+            <h1>Demo Project</h1>
+        </header>
+        <section>
+            <h2>DATA:</h2>
+            <table border="1">
+                <tr>
+                    <th>S.NO</th>
+                    <th>NAME</th>
+                    <th>ROLL NO</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>V.KUNDANA</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>P.PALLAVI</td>
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>K.SARASWATHI</td>
+                    <td>58</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>SUBJECTS:</h2>
+            <ol>
+                <li>Web Technology</li>
+                <li>Artificial intelligence</li>
+                <li>Data Structures</li>
+            </ol>
 
-    <section id="lists-section">
-        <h2>SUBJECTS:</h2>
-        <ol>
-            <li>Web Technology</li>
-            <li>Artificial intelligence</li>
-            <li>Data Structures</li>
-        </ol>
+            <ul>
+                <li>Web Technology</li>
+                <li>Artificial intelligence</li>
+                <li>Data Structures</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Forms</h2>
+            <form action="#" method="post">
+                <label for="first-name">First Name:</label>
+                <input
+                    type="text"
+                    id="first-name"
+                    placeholder="first name"
+                    name="first-name"
+                    required="required">
 
-        <ul>
-            <li>Web Technology</li>
-            <li>Artificial intelligence</li>
-            <li>Data Structures</li>
-        </ul>
-    </section>
+                <label for="last-name">Last Name:</label>
+                <input
+                    type="text"
+                    id="last-name"
+                    placeholder="last name"
+                    name="last-name"
+                    required="required">
 
-    <section id="forms-section">
-        <h2>Forms</h2>
-        <form action="#" method="post">
-            <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" placeholder="first name" name="first-name" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required="required">
 
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" placeholder="last name" name="last-name" required>
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="e-mail"
+                    name="email"
+                    required="required">
 
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="password"
+                    name="password"
+                    required="required">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="e-mail" name="email" required>
+                <label for="textarea">Bio:</label>
+                <textarea
+                    id="textarea"
+                    name="textarea"
+                    placeholder="About yourself"
+                    rows="4"
+                    cols="50"></textarea>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="password" name="password" required>
+                <label for="degree-checkbox">Select Degree:</label>
+                <div class="degree-checkbox">
+                    <input type="checkbox" id="btech" name="degree" value="btech">
+                    <label for="">B.Tech</label>
+                    <input type="checkbox" id="mtech" name="degree" value="mtech">
+                    <label for="">M.Tech</label>
+                </div>
 
-            <label for="textarea">Bio:</label>
-            <textarea id="textarea" name="textarea" placeholder="About yourself" rows="4" cols="50"></textarea>
+                <label for="hobbies">Hobbies:</label>
+                <select id="hobbies" name="hobbies">
+                    <option value="select">select</option>
+                    <option value="reading">Reading</option>
+                    <option value="coding">Coding</option>
+                    <option value="traveling">Traveling</option>
+                    <option value="sports">Sports</option>
+                    <option value="music">Music</option>
+                    <option value="art">Art</option>
+                </select>
 
-            <label for="degree-checkbox">Select Degree:</label>
-            <div class="degree-checkbox">
-                <input type="checkbox" id="btech" name="degree" value="btech">
-                <label for="">B.Tech</label>
-                <input type="checkbox" id="mtech" name="degree" value="mtech">
-                <label for="">M.Tech</label>
-            </div>
+                <label>Gender:</label>
+                <div class="gender-radio">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
 
-            <label for="hobbies">Hobbies:</label>
-            <select id="hobbies" name="hobbies">
-                <option value="select">select</option>
-                <option value="reading">Reading</option>
-                <option value="coding">Coding</option>
-                <option value="traveling">Traveling</option>
-                <option value="sports">Sports</option>
-                <option value="music">Music</option>
-                <option value="art">Art</option>
-            </select>
-
-            <label>Gender:</label>
-            <div class="gender-radio">
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
-            </div>
-            <a href="submit.html">
-                <center>
-                <button type="submit">Submit</button>
-                </center>
-            </a>
-        </form>
-    </section>
-</body>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <a href="submit.html">
+                    <button type="button">Submit</button>
+                </a>
+            </form>
+        </section>
+    </body>
 
 </html>
